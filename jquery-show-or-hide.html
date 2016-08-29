@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery test</title>
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+
+<h1>hello world!</h1>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("#button-show").click(function(){
+				$('h1').show("slow");
+
+			});		
+				
+			$("#button-hide").click(function(){
+				$('h1').hide("slow");
+		
+			});
+		
+		});
+
+	</script>
+
+<button id="button-show">show</button>
+<button id="button-hide">hide</button>
+</body>
+</html>
